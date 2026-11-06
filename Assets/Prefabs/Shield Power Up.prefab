@@ -47,8 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   type: 1
-  multiplier: 1.6
-  duration: 5
+  duration: 30
 --- !u!135 &7794842134377330180
 SphereCollider:
   m_ObjectHideFlags: 0
