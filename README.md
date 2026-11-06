@@ -1,5 +1,5 @@
 # CS464 Assignment 03 · Abdullah Saeed · BSCS25067
-- **Video (60–120 s):** [YouTube (unlisted) or Google Drive link]
+- **Video (60–120 s):** [Google Drive Link](https://drive.google.com/file/d/1Ukfo6go0PQV7gQnrsCCz6x2gF9HbQdwi/view?usp=sharing)
 - **Started from:** A new project based off of Lab 6. Assignment 2 was a 3rd person player with a follow camera which clashed with the mechanics I wanted here so I created a new project.
 - **Controls:** WASD for Movement
 - **To win a level:** Collect the specified number of coins each level while surviving the enemies
