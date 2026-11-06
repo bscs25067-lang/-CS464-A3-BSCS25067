@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
     private int _current;
     private float _invulnerableUntil;
     private Coroutine _flashRoutine;
+    private Coroutine _shieldRoutine; // Tracks the running shield timer
 
     private Material _material;
     private Color _originalColor;
@@ -42,16 +43,36 @@ public class Health : MonoBehaviour
         shieldVisual.Stop();
     }
 
-    public void SetShield(bool active)
+    public void SetShield(bool active, float duration = 0f)
     {
+        // Stop any existing shield timer to apply the Refresh rule
+        if (_shieldRoutine != null)
+        {
+            StopCoroutine(_shieldRoutine);
+            _shieldRoutine = null;
+        }
+
         shielded = active;
 
-        if (active) shieldVisual.Play();
+        if (active)
+        {
+            shieldVisual.Play();
+            if (duration > 0f)
+            {
+                _shieldRoutine = StartCoroutine(ShieldTimerRoutine(duration));
+            }
+        }
         else
         {
             shieldVisual.Stop();
             shieldBreakEffect.Play();
         }
+    }
+
+    private IEnumerator ShieldTimerRoutine(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        SetShield(false);
     }
 
     public bool TakeDamage(int amount)

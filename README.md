@@ -10,16 +10,16 @@
 | Level01 | <img src="Docs/a3/level01.png" width="320"> | Coins, Jump pads and, speed boosts | Nothing hurts yet and safe introduction of mechanics |
 | Level02 | <img src="Docs/a3/level02.png" width="320"> | Static spikes, health & shields, and knockback | Jump pads clearing a spike pit, and climbing |
 | Level03 | <img src="Docs/a3/level03.png" width="320"> | AI Guard (Patrol, Chase, and Return) | Evading the guards using speed boosts while avoiding spikes |
-| Level04 | <img src="Docs/a3/level04.png" width="320"> | [new idea] | [combined with] |
+| Level04 | <img src="Docs/a3/level04.png" width="320"> | Crusher hazard | Timing rolls through crushers, jump pads, and an AI guard |
 | Level05 | <img src="Docs/a3/level05.png" width="320"> | [new idea] | [combined with] |
 ## The numbers
 | Number | Value | Why this value |
 |---|---|---|
-| Patrol speed | [m/s] | [e.g. how it compares with your run speed] |
-| Chase range | [m] | [e.g. what a guard can and can't see from its route] |
+| Patrol speed | 3m/s | The move speed of the ball is 5 which is applied via a force, so player can out run the Ai |
+| Chase range | 10 | It cannot see pass walls and moves to the players last seen position before moving away |
 | Knockback | 6, Impuslse | Depends on the speed of the player, but on average it pushes you 1-2 units away from the hazard |
 | I-frames | 1s | A good duration to tell the player they have been hit, and to clear and obstacle |
-| Power-up duration | 20s for speed, infinite for shield | 20s gives ample amount of boost to cover the ground and get out of tight spots, infinite for the shield makes it fair as they give u a second chance |
+| Power-up duration | 20s for speed, 30s for shield | 20s gives ample amount of boost to cover the ground and get out of tight spots, 30 for the shield makes it fair as they give u a second chance |
 
 
 ## Short answers

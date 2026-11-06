@@ -5253,6 +5253,7 @@ MonoBehaviour:
   strikeTime: 0.4
   warning: {fileID: 2507530200454944153}
   active: {fileID: 3282323855460522133}
+  fx: {fileID: 3981252217009474443}
   stomper: {fileID: 147514828409107414}
   dropDistance: 4
   recoverTime: 1

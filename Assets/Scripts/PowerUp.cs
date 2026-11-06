@@ -9,7 +9,6 @@ public class PowerUp : MonoBehaviour
     }
 
     [SerializeField] PowerUpType type = PowerUpType.Speed;
-    [SerializeField] float multiplier = 1.6f;
     [SerializeField] float duration = 5f;
 
     void OnTriggerEnter(Collider other)
@@ -19,7 +18,7 @@ public class PowerUp : MonoBehaviour
         if (type == PowerUpType.Speed)
             other.GetComponent<PlayerController>().BoostSpeed();
         else
-            other.GetComponent<Health>().SetShield(true);
+            other.GetComponent<Health>().SetShield(true, duration);
 
         Destroy(gameObject);
     }
