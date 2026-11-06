@@ -11,7 +11,7 @@
 | Level02 | <img src="Docs/a3/level02.png" width="320"> | Static spikes, health & shields, and knockback | Jump pads clearing a spike pit, and climbing |
 | Level03 | <img src="Docs/a3/level03.png" width="320"> | AI Guard (Patrol, Chase, and Return) | Evading the guards using speed boosts while avoiding spikes |
 | Level04 | <img src="Docs/a3/level04.png" width="320"> | Crusher hazard | Timing rolls through crushers, jump pads, and an AI guard |
-| Level05 | <img src="Docs/a3/level05.png" width="320"> | [new idea] | [combined with] |
+| Level05 | <img src="Docs/a3/level05.png" width="320"> | Timed power-up logic and i-frame survival | Everything so far with guards, crushers, spikes, and jump pads |
 ## The numbers
 | Number | Value | Why this value |
 |---|---|---|
